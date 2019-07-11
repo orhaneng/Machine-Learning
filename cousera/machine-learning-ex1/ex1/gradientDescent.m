@@ -16,8 +16,11 @@ for iter = 1:num_iters
     % Hint: While debugging, it can be useful to print out the values
     %       of the cost function (computeCost) and gradient here.
     %
-
-	theta -= (alpha/m) * (X' * (X*theta - y));
+	%X*theta => to find prediction h(theta) = theta0*X0 +theta1*X1 so on 
+	%X*theta - y => get distance 
+	%derivetive = sum each matrix
+	%substract each theta 
+ 	theta -= (alpha/m) * (X' * (X*theta - y));
 
 
     % ============================================================
